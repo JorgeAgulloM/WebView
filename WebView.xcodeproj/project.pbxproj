@@ -13,6 +13,7 @@
 		115A890427D9EFF2003E6CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115A890227D9EFF2003E6CFD /* Main.storyboard */; };
 		115A890627D9EFF4003E6CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115A890527D9EFF4003E6CFD /* Assets.xcassets */; };
 		115A890927D9EFF4003E6CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115A890727D9EFF4003E6CFD /* LaunchScreen.storyboard */; };
+		115A891127D9F723003E6CFD /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A891027D9F723003E6CFD /* SafariViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		115A890527D9EFF4003E6CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		115A890827D9EFF4003E6CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		115A890A27D9EFF4003E6CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115A891027D9F723003E6CFD /* SafariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				115A88FC27D9EFF2003E6CFD /* AppDelegate.swift */,
 				115A88FE27D9EFF2003E6CFD /* SceneDelegate.swift */,
 				115A890027D9EFF2003E6CFD /* ViewController.swift */,
+				115A891027D9F723003E6CFD /* SafariViewController.swift */,
 				115A890227D9EFF2003E6CFD /* Main.storyboard */,
 				115A890527D9EFF4003E6CFD /* Assets.xcassets */,
 				115A890727D9EFF4003E6CFD /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				115A890127D9EFF2003E6CFD /* ViewController.swift in Sources */,
 				115A88FD27D9EFF2003E6CFD /* AppDelegate.swift in Sources */,
+				115A891127D9F723003E6CFD /* SafariViewController.swift in Sources */,
 				115A88FF27D9EFF2003E6CFD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

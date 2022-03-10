@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qPh-uX-Wq6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qOd-RK-JP1">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -24,6 +24,40 @@
             </objects>
             <point key="canvasLocation" x="1031.8840579710145" y="107.8125"/>
         </scene>
+        <!--Safary View Controller-->
+        <scene sceneID="5Tf-ce-ne3">
+            <objects>
+                <viewController id="dHo-dH-nqo" customClass="SafaryViewController" customModule="WebView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4nU-7i-qSR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N33-ox-Fg1">
+                                <rect key="frame" x="20" y="123" width="374" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="yzf-GK-xzv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Abrir StackOverflow"/>
+                                <connections>
+                                    <action selector="OpenStackOverflow:" destination="dHo-dH-nqo" eventType="touchUpInside" id="T9q-gc-Wus"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="okT-5G-z24"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N33-ox-Fg1" firstAttribute="top" secondItem="okT-5G-z24" secondAttribute="top" constant="35" id="KO4-SF-Etc"/>
+                            <constraint firstItem="N33-ox-Fg1" firstAttribute="leading" secondItem="okT-5G-z24" secondAttribute="leading" constant="20" id="kYc-2r-oa8"/>
+                            <constraint firstItem="okT-5G-z24" firstAttribute="trailing" secondItem="N33-ox-Fg1" secondAttribute="trailing" constant="20" id="xRe-AD-fXr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="baa-WH-xTZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E7q-jv-7LR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031.8840579710145" y="796.875"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="b64-eK-WKx">
             <objects>
@@ -41,6 +75,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nlw-Vx-oZR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="121.73913043478262" y="107.8125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wP2-q9-TZR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qOd-RK-JP1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pBV-YW-gqY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dHo-dH-nqo" kind="relationship" relationship="rootViewController" id="9rj-qy-gYP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ye5-Td-Lqn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="797"/>
         </scene>
     </scenes>
     <resources>
